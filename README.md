@@ -2,7 +2,7 @@
 
 [![Go Reference](https://pkg.go.dev/badge/a2aserver/pkg/a2a.svg)](https://pkg.go.dev/a2aserver/pkg/a2a)
 
-This repository contains a Go library (`pkg/a2a`) for building servers that implement the Agent-to-Agent (A2A) communication protocol, along with example server implementations (`cmd/a2aserver`, `examples/`).
+This repository contains a Go library (`pkg/a2a`) for building servers that implement the Agent-to-Agent (A2A) communication protocol, along with example server implementations (`cmd/a2aserver`, `examples/`). The official A2A protocol specification can be found at [https://google.github.io/A2A/](https://google.github.io/A2A/).
 
 The goal is to provide a flexible and easy-to-use framework for creating A2A agents in Go.
 
@@ -129,21 +129,3 @@ func main() {
 	}
 }
 ```
-
-## Running Tests
-
-
-```bash
-go test ./...
-```
-
-*(Note: Some tests might currently be failing and need further investigation/fixes).*
-
-## TODO / Future Improvements
-
-*   Fix remaining failing unit tests.
-*   Implement `tasks/pushNotification/set` and `tasks/pushNotification/get` default logic (currently uses `BaseHandler` which returns `ErrPushNotificationsNotSupported`).
-*   Add support for `ToolCallPart` and `ToolResultPart` if required by specific agent needs.
-*   Refine history management (e.g., options for trimming history in `GetTask` responses).
-*   Add more comprehensive integration tests.
-*   Consider adding authentication/authorization hooks. 

@@ -1041,11 +1041,8 @@ func applyUpdateToTaskAndHistory(current *TaskAndHistory, update interface{}) (*
 				newTask.Artifacts[updateIndex] = artifactUpdate
 				replaced = true
 			}
-		} else if updateIndex >= len(newTask.Artifacts) {
-			// Index out of bounds - return error instead of logging
-			return nil, fmt.Errorf("invalid artifact index %d provided for update (out of bounds for len %d)", updateIndex, len(newTask.Artifacts))
 		}
-		// If index is negative or not provided (zero value), try matching by name or append.
+		// If index is negative or not provided (zero value), or out of bounds, try matching by name or append.
 
 		if !replaced && artifactUpdate.Name != "" { // Check name only if not replaced by index
 			for i := range newTask.Artifacts {
