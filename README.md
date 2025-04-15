@@ -68,7 +68,7 @@ package main
 
 import (
 	"log"
-	"a2aserver/pkg/a2a" // Adjust import path
+	"github.com/a2aserver/a2a-go"// Adjust import path
 	"os"
 )
 
@@ -132,10 +132,9 @@ func main() {
 
 ## Running Tests
 
-Run unit tests for the `pkg/a2a` library:
 
 ```bash
-go test ./pkg/a2a/...
+go test ./...
 ```
 
 *(Note: Some tests might currently be failing and need further investigation/fixes).*
