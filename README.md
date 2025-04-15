@@ -59,7 +59,7 @@ go build ./examples/.../...
     curl -X POST http://localhost:8080/ -d '{"jsonrpc":"2.0","method":"tasks/sendSubscribe","params":{"message":{"role":"user","parts":[{"type":"text","text":"Stream test"}]}},"id":2}'
     ```
 
-## Usage (Library `pkg/a2a`)
+## Usage 
 
 Here's a basic example of using the library:
 
