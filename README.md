@@ -1,5 +1,7 @@
 # a2aserver - Go A2A Server Library
 
+[中文版](README_zh.md)
+
 [![Go Reference](https://pkg.go.dev/badge/a2aserver/pkg/a2a.svg)](https://pkg.go.dev/a2aserver/pkg/a2a)
 
 This repository contains a Go library (`pkg/a2a`) for building servers that implement the Agent-to-Agent (A2A) communication protocol, along with example server implementations (`cmd/a2aserver`, `examples/`). The official A2A protocol specification can be found at [https://google.github.io/A2A/](https://google.github.io/A2A/).

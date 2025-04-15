@@ -1,5 +1,7 @@
 # a2aserver - Go A2A 服务器库
 
+[English Version](README.md)
+
 [![Go Reference](https://pkg.go.dev/badge/github.com/a2aserver/a2a-go.svg)](https://pkg.go.dev/github.com/a2aserver/a2a-go)
 
 本仓库包含一个 Go 库 (`github.com/a2aserver/a2a-go`)，用于构建实现 Agent-to-Agent (A2A) 通信协议的服务器，以及示例服务器实现 (`cmd/a2aserver`, `examples/`)。官方 A2A 协议规范请参阅 [https://google.github.io/A2A/](https://google.github.io/A2A/)。
