@@ -17,27 +17,6 @@ The goal is to provide a flexible and easy-to-use framework for creating A2A age
 *   **Default Implementations:** Provides default logic for `SendTask`, `SendTaskSubscribe` (creates pending tasks), `GetTask`, `CancelTask`, and `Resubscribe` that automatically interacts with the configured `TaskStore`.
 *   **Consolidated Schema:** Core A2A data structures (Task, Message, Part, Artifact, etc.) are defined in `pkg/a2a/schema.go`.
 
-## Project Structure
-
-```
-.
-├── cmd/                    # Main applications (server binaries)
-│   └── a2aserver/          # Example server demonstrating various features
-├── examples/               # Standalone example applications
-│   ├── helloworld/         # Minimal server implementing SendTask
-│   └── simple/             # Simple server demonstrating streaming
-├── pkg/
-│   └── a2a/                # Core A2A library package
-│       ├── schema.go       # Core A2A data structures
-│       ├── handler.go      # HandlerFuncs, BaseHandler
-│       ├── store.go        # TaskStore interface, InMemoryTaskStore, FileTaskStore
-│       ├── server.go       # Server implementation, handlerAdapter, SSE logic
-│       ├── options.go      # Functional options for server configuration
-│       └── errors.go       # Custom error types
-├── go.mod
-├── go.sum
-└── README.md
-```
 
 ## Getting Started
 
